@@ -1,0 +1,5 @@
+This error occurs when using Tailwind's `@apply` directive with a class that doesn't exist or has a typo.  For example:
+```html
+<div class="bg-blue-500 @apply my-nonexistent-class"></div>
+```
+This will result in no styling applied from `my-nonexistent-class`, and potentially no error message from Tailwind itself, making it hard to debug.
